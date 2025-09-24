@@ -7,7 +7,7 @@
 หากต้องการให้ค่า ADC อยู่ประมาณ 2048 ต้องหมุน Potentiometer ไปที่ตำแหน่งใด?
 - **Ans:** : 50
 ความผิดพลาดของการวัด (Error) มีสาเหตุมาจากอะไรบ้าง?
-- **Ans:** : - ความผิดพลาดจากการควอนไทซ์ (Quantization Error) ของ ADC  
+- **Ans:** - ความผิดพลาดจากการควอนไทซ์ (Quantization Error) ของ ADC  
            - ความไม่เสถียรของแรงดันอ้างอิง (Reference Voltage Drift)  
            - สัญญาณรบกวน (Electrical Noise) จากวงจรหรือสิ่งแวดล้อม  
            - ความคลาดเคลื่อนจากอุปกรณ์ (Sensor Tolerance, Resistor Tolerance)  
