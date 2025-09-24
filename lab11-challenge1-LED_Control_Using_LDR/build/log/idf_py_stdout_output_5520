@@ -1,0 +1,677 @@
+Command: C:\Users\Petch\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Petch\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Petch\OneDrive\Documents\VScode\Week-11-Microcontroller-applications\lab11-challenge1-LED_Control_Using_LDR\build\lab11-challenge1-LED_Control_Using_LDR.elf C:\Users\Petch\OneDrive\Documents\VScode\Week-11-Microcontroller-applications\lab11-challenge1-LED_Control_Using_LDR\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Petch\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Petch\esp\v5.5.1\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 24 2025 16:42:53[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa44h ( 43588) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001aa6c vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001ce6c vaddr=40080000 size=031ach ( 12716) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15838h ( 88120) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00035860 vaddr=400831ac size=09e04h ( 40452) load[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003f66c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     lab11-challenge1-LED_Control_Us[0m
+[0;32mI (193) app_init: App version:      bd82454-dirty[0m
+[0;32mI (198) app_init: Compile time:     Sep 24 2025 16:40:49[0m
+[0;32mI (203) app_init: ELF file SHA256:  14c21fcc9...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFB2CC8 len 0002D338 (180 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (256) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (287) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) ADC_LDR_LED: eFuse Two Point: NOT available[0m
+[0;32mI (305) ADC_LDR_LED: eFuse Vref: available[0m
+[0;32mI (305) ADC_LDR_LED: Calibration: eFuse Vref[0m
+[0;32mI (305) ADC_LDR_LED: LDR on GPIO35 (ADC1_CH7), LED on GPIO18 (active HIGH)[0m
+[0;32mI (315) ADC_LDR_LED: LED policy: BRIGHT -> ON  |  DARK -> OFF[0m
+[0;32mI (325) ADC_LDR_LED: Thresholds: ON > 70.0%, OFF < 60.0%[0m
+[0;32mI (325) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (835) ADC_LDR_LED: ADC:2244  V:1.961 V  Light: 54.8% (Moderate)  LED:OFF[0m
+[0;32mI (1335) ADC_LDR_LED: ADC:2371  V:2.064 V  Light: 57.9% (Moderate)  LED:OFF[0m
+[0;32mI (1835) ADC_LDR_LED: ADC:2471  V:2.145 V  Light: 60.3% (Moderate)  LED:OFF[0m
+[0;32mI (2335) ADC_LDR_LED: ADC:2613  V:2.261 V  Light: 63.8% (Moderate)  LED:OFF[0m
+[0;32mI (2835) ADC_LDR_LED: ADC:2687  V:2.321 V  Light: 65.6% (Moderate)  LED:OFF[0m
+[0;32mI (3335) ADC_LDR_LED: ADC:2870  V:2.469 V  Light: 70.1% (Moderate)  LED:ON[0m
+[0;32mI (3835) ADC_LDR_LED: ADC:2983  V:2.544 V  Light: 72.8% (Moderate)  LED:ON[0m
+[0;32mI (4335) ADC_LDR_LED: ADC:3103  V:2.626 V  Light: 75.8% (Moderate)  LED:ON[0m
+[0;32mI (4835) ADC_LDR_LED: ADC:3233  V:2.710 V  Light: 78.9% (Moderate)  LED:ON[0m
+[0;32mI (5335) ADC_LDR_LED: ADC:3391  V:2.805 V  Light: 82.8% (Bright)  LED:ON[0m
+[0;32mI (5835) ADC_LDR_LED: ADC:3523  V:2.877 V  Light: 86.0% (Bright)  LED:ON[0m
+[0;32mI (6335) ADC_LDR_LED: ADC:3614  V:2.922 V  Light: 88.3% (Bright)  LED:ON[0m
+[0;32mI (6835) ADC_LDR_LED: ADC:3716  V:2.972 V  Light: 90.7% (Bright)  LED:ON[0m
+[0;32mI (7335) ADC_LDR_LED: ADC:3845  V:3.032 V  Light: 93.9% (Bright)  LED:ON[0m
+[0;32mI (7835) ADC_LDR_LED: ADC:3934  V:3.071 V  Light: 96.1% (Bright)  LED:ON[0m
+[0;32mI (8335) ADC_LDR_LED: ADC:3997  V:3.098 V  Light: 97.6% (Bright)  LED:ON[0m
+[0;32mI (8835) ADC_LDR_LED: ADC:4055  V:3.122 V  Light: 99.0% (Bright)  LED:ON[0m
+[0;32mI (9335) ADC_LDR_LED: ADC:4090  V:3.137 V  Light: 99.9% (Bright)  LED:ON[0m
+[0;32mI (9835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (10335) ADC_LDR_LED: ADC:4078  V:3.132 V  Light: 99.6% (Bright)  LED:ON[0m
+[0;32mI (10835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (11335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (11835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (12335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (12835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (13335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (13835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (14335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (14835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (15335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (15835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (16335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (16835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (17335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (17835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (18335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (18835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (19335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (19835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (20335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (20835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (21335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (21835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (22335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (22835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (23335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (23835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (24335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (24835) ADC_LDR_LED: ADC:4086  V:3.135 V  Light: 99.8% (Bright)  LED:ON[0m
+[0;32mI (25335) ADC_LDR_LED: ADC:4055  V:3.122 V  Light: 99.0% (Bright)  LED:ON[0m
+[0;32mI (25835) ADC_LDR_LED: ADC:4004  V:3.101 V  Light: 97.8% (Bright)  LED:ON[0m
+[0;32mI (26335) ADC_LDR_LED: ADC:3923  V:3.066 V  Light: 95.8% (Bright)  LED:ON[0m
+[0;32mI (26835) ADC_LDR_LED: ADC:3834  V:3.027 V  Light: 93.6% (Bright)  LED:ON[0m
+[0;32mI (27335) ADC_LDR_LED: ADC:3749  V:2.987 V  Light: 91.6% (Bright)  LED:ON[0m
+[0;32mI (27835) ADC_LDR_LED: ADC:3608  V:2.920 V  Light: 88.1% (Bright)  LED:ON[0m
+[0;32mI (28335) ADC_LDR_LED: ADC:3496  V:2.863 V  Light: 85.4% (Bright)  LED:ON[0m
+[0;32mI (28835) ADC_LDR_LED: ADC:3307  V:2.756 V  Light: 80.8% (Bright)  LED:ON[0m
+[0;32mI (29335) ADC_LDR_LED: ADC:3065  V:2.601 V  Light: 74.8% (Moderate)  LED:ON[0m
+[0;32mI (29835) ADC_LDR_LED: ADC:2806  V:2.417 V  Light: 68.5% (Moderate)  LED:ON[0m
+[0;32mI (30335) ADC_LDR_LED: ADC:2663  V:2.301 V  Light: 65.0% (Moderate)  LED:ON[0m
+[0;32mI (30835) ADC_LDR_LED: ADC:2404  V:2.091 V  Light: 58.7% (Moderate)  LED:OFF[0m
+[0;32mI (31335) ADC_LDR_LED: ADC:2155  V:1.889 V  Light: 52.6% (Moderate)  LED:OFF[0m
+[0;32mI (31835) ADC_LDR_LED: ADC:1993  V:1.758 V  Light: 48.7% (Dim)  LED:OFF[0m
+[0;32mI (32335) ADC_LDR_LED: ADC:1802  V:1.603 V  Light: 44.0% (Dim)  LED:OFF[0m
+[0;32mI (32835) ADC_LDR_LED: ADC:1635  V:1.468 V  Light: 39.9% (Dim)  LED:OFF[0m
+[0;32mI (33335) ADC_LDR_LED: ADC:1462  V:1.327 V  Light: 35.7% (Dim)  LED:OFF[0m
+[0;32mI (33835) ADC_LDR_LED: ADC:1278  V:1.178 V  Light: 31.2% (Dim)  LED:OFF[0m
+[0;32mI (34335) ADC_LDR_LED: ADC:1220  V:1.131 V  Light: 29.8% (Dim)  LED:OFF[0m
+[0;32mI (34835) ADC_LDR_LED: ADC:1093  V:1.028 V  Light: 26.7% (Dim)  LED:OFF[0m
+[0;32mI (35335) ADC_LDR_LED: ADC:1032  V:0.979 V  Light: 25.2% (Dim)  LED:OFF[0m
+[0;32mI (35835) ADC_LDR_LED: ADC: 949  V:0.911 V  Light: 23.2% (Dim)  LED:OFF[0m
+[0;32mI (36335) ADC_LDR_LED: ADC: 879  V:0.855 V  Light: 21.5% (Dim)  LED:OFF[0m
+[0;32mI (36835) ADC_LDR_LED: ADC: 872  V:0.849 V  Light: 21.3% (Dim)  LED:OFF[0m
+[0;32mI (37335) ADC_LDR_LED: ADC: 820  V:0.807 V  Light: 20.0% (Dim)  LED:OFF[0m
+[0;32mI (37835) ADC_LDR_LED: ADC: 806  V:0.795 V  Light: 19.7% (Dark)  LED:OFF[0m
+[0;32mI (38335) ADC_LDR_LED: ADC: 777  V:0.772 V  Light: 19.0% (Dark)  LED:OFF[0m
+[0;32mI (38835) ADC_LDR_LED: ADC: 702  V:0.711 V  Light: 17.1% (Dark)  LED:OFF[0m
+[0;32mI (39335) ADC_LDR_LED: ADC: 699  V:0.709 V  Light: 17.1% (Dark)  LED:OFF[0m
+[0;32mI (39835) ADC_LDR_LED: ADC: 683  V:0.696 V  Light: 16.7% (Dark)  LED:OFF[0m
+[0;32mI (40335) ADC_LDR_LED: ADC: 638  V:0.659 V  Light: 15.6% (Dark)  LED:OFF[0m
+[0;32mI (40835) ADC_LDR_LED: ADC: 638  V:0.659 V  Light: 15.6% (Dark)  LED:OFF[0m
+[0;32mI (41335) ADC_LDR_LED: ADC: 623  V:0.647 V  Light: 15.2% (Dark)  LED:OFF[0m
+[0;32mI (41835) ADC_LDR_LED: ADC: 578  V:0.611 V  Light: 14.1% (Dark)  LED:OFF[0m
+[0;32mI (42335) ADC_LDR_LED: ADC: 575  V:0.608 V  Light: 14.0% (Dark)  LED:OFF[0m
+[0;32mI (42835) ADC_LDR_LED: ADC: 590  V:0.620 V  Light: 14.4% (Dark)  LED:OFF[0m
+[0;32mI (43335) ADC_LDR_LED: ADC: 586  V:0.617 V  Light: 14.3% (Dark)  LED:OFF[0m
+[0;32mI (43835) ADC_LDR_LED: ADC: 597  V:0.626 V  Light: 14.6% (Dark)  LED:OFF[0m
+[0;32mI (44335) ADC_LDR_LED: ADC: 560  V:0.596 V  Light: 13.7% (Dark)  LED:OFF[0m
+[0;32mI (44835) ADC_LDR_LED: ADC: 577  V:0.610 V  Light: 14.1% (Dark)  LED:OFF[0m
+[0;32mI (45335) ADC_LDR_LED: ADC: 536  V:0.577 V  Light: 13.1% (Dark)  LED:OFF[0m
+[0;32mI (45835) ADC_LDR_LED: ADC: 543  V:0.582 V  Light: 13.3% (Dark)  LED:OFF[0m
+[0;32mI (46335) ADC_LDR_LED: ADC: 529  V:0.571 V  Light: 12.9% (Dark)  LED:OFF[0m
+[0;32mI (46835) ADC_LDR_LED: ADC: 536  V:0.577 V  Light: 13.1% (Dark)  LED:OFF[0m
+[0;32mI (47335) ADC_LDR_LED: ADC: 523  V:0.566 V  Light: 12.8% (Dark)  LED:OFF[0m
+[0;32mI (47835) ADC_LDR_LED: ADC: 564  V:0.599 V  Light: 13.8% (Dark)  LED:OFF[0m
+[0;32mI (48335) ADC_LDR_LED: ADC: 582  V:0.614 V  Light: 14.2% (Dark)  LED:OFF[0m
+[0;32mI (48835) ADC_LDR_LED: ADC: 595  V:0.624 V  Light: 14.5% (Dark)  LED:OFF[0m
+[0;32mI (49335) ADC_LDR_LED: ADC: 634  V:0.656 V  Light: 15.5% (Dark)  LED:OFF[0m
+[0;32mI (49835) ADC_LDR_LED: ADC: 713  V:0.720 V  Light: 17.4% (Dark)  LED:OFF[0m
+[0;32mI (50335) ADC_LDR_LED: ADC: 772  V:0.768 V  Light: 18.9% (Dark)  LED:OFF[0m
+[0;32mI (50835) ADC_LDR_LED: ADC: 830  V:0.815 V  Light: 20.3% (Dim)  LED:OFF[0m
+[0;32mI (51335) ADC_LDR_LED: ADC: 906  V:0.877 V  Light: 22.1% (Dim)  LED:OFF[0m
+[0;32mI (51835) ADC_LDR_LED: ADC: 999  V:0.952 V  Light: 24.4% (Dim)  LED:OFF[0m
+[0;32mI (52335) ADC_LDR_LED: ADC:1117  V:1.048 V  Light: 27.3% (Dim)  LED:OFF[0m
+[0;32mI (52835) ADC_LDR_LED: ADC:1193  V:1.109 V  Light: 29.1% (Dim)  LED:OFF[0m
+[0;32mI (53335) ADC_LDR_LED: ADC:1336  V:1.225 V  Light: 32.6% (Dim)  LED:OFF[0m
+[0;32mI (53835) ADC_LDR_LED: ADC:1540  V:1.391 V  Light: 37.6% (Dim)  LED:OFF[0m
+[0;32mI (54335) ADC_LDR_LED: ADC:1743  V:1.555 V  Light: 42.6% (Dim)  LED:OFF[0m
+[0;32mI (54835) ADC_LDR_LED: ADC:1906  V:1.687 V  Light: 46.5% (Dim)  LED:OFF[0m
+[0;32mI (55335) ADC_LDR_LED: ADC:2087  V:1.834 V  Light: 51.0% (Moderate)  LED:OFF[0m
+[0;32mI (55835) ADC_LDR_LED: ADC:2356  V:2.052 V  Light: 57.5% (Moderate)  LED:OFF[0m
+[0;32mI (56335) ADC_LDR_LED: ADC:2533  V:2.196 V  Light: 61.9% (Moderate)  LED:OFF[0m
+[0;32mI (56835) ADC_LDR_LED: ADC:2770  V:2.388 V  Light: 67.6% (Moderate)  LED:OFF[0m
+[0;32mI (57335) ADC_LDR_LED: ADC:2978  V:2.540 V  Light: 72.7% (Moderate)  LED:ON[0m
+[0;32mI (57835) ADC_LDR_LED: ADC:2979  V:2.541 V  Light: 72.7% (Moderate)  LED:ON[0m
+[0;32mI (58335) ADC_LDR_LED: ADC:3129  V:2.643 V  Light: 76.4% (Moderate)  LED:ON[0m
+[0;32mI (58835) ADC_LDR_LED: ADC:3240  V:2.714 V  Light: 79.1% (Moderate)  LED:ON[0m
+[0;32mI (59335) ADC_LDR_LED: ADC:3503  V:2.867 V  Light: 85.5% (Bright)  LED:ON[0m
+[0;32mI (59835) ADC_LDR_LED: ADC:3589  V:2.910 V  Light: 87.6% (Bright)  LED:ON[0m
+[0;32mI (60335) ADC_LDR_LED: ADC:3644  V:2.937 V  Light: 89.0% (Bright)  LED:ON[0m
+[0;32mI (60835) ADC_LDR_LED: ADC:3841  V:3.030 V  Light: 93.8% (Bright)  LED:ON[0m
+[0;32mI (61335) ADC_LDR_LED: ADC:3819  V:3.020 V  Light: 93.3% (Bright)  LED:ON[0m
+[0;32mI (61835) ADC_LDR_LED: ADC:3963  V:3.083 V  Light: 96.8% (Bright)  LED:ON[0m
+[0;32mI (62335) ADC_LDR_LED: ADC:4040  V:3.116 V  Light: 98.7% (Bright)  LED:ON[0m
+[0;32mI (62835) ADC_LDR_LED: ADC:4036  V:3.114 V  Light: 98.6% (Bright)  LED:ON[0m
+[0;32mI (63335) ADC_LDR_LED: ADC:4048  V:3.119 V  Light: 98.9% (Bright)  LED:ON[0m
+[0;32mI (63835) ADC_LDR_LED: ADC:3979  V:3.090 V  Light: 97.2% (Bright)  LED:ON[0m
+[0;32mI (64335) ADC_LDR_LED: ADC:3017  V:2.568 V  Light: 73.7% (Moderate)  LED:ON[0m
+[0;32mI (64835) ADC_LDR_LED: ADC:2632  V:2.276 V  Light: 64.3% (Moderate)  LED:ON[0m
+[0;32mI (65335) ADC_LDR_LED: ADC:2572  V:2.227 V  Light: 62.8% (Moderate)  LED:ON[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 24 2025 16:42:53[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa44h ( 43588) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001aa6c vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001ce6c vaddr=40080000 size=031ach ( 12716) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15838h ( 88120) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00035860 vaddr=400831ac size=09e04h ( 40452) load[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003f66c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     lab11-challenge1-LED_Control_Us[0m
+[0;32mI (193) app_init: App version:      bd82454-dirty[0m
+[0;32mI (198) app_init: Compile time:     Sep 24 2025 16:40:49[0m
+[0;32mI (203) app_init: ELF file SHA256:  14c21fcc9...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFB2CC8 len 0002D338 (180 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (256) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (287) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) ADC_LDR_LED: eFuse Two Point: NOT available[0m
+[0;32mI (305) ADC_LDR_LED: eFuse Vref: available[0m
+[0;32mI (305) ADC_LDR_LED: Calibration: eFuse Vref[0m
+[0;32mI (305) ADC_LDR_LED: LDR on GPIO35 (ADC1_CH7), LED on GPIO18 (active HIGH)[0m
+[0;32mI (315) ADC_LDR_LED: LED policy: BRIGHT -> ON  |  DARK -> OFF[0m
+[0;32mI (325) ADC_LDR_LED: Thresholds: ON > 70.0%, OFF < 60.0%[0m
+[0;32mI (325) ADC_LDR_LED: ADC:4085  V:3.135 V  Light: 99.8% (Bright)  LED:ON[0m
+[0;32mI (835) ADC_LDR_LED: ADC:2973  V:2.537 V  Light: 72.6% (Moderate)  LED:ON[0m
+[0;32mI (1335) ADC_LDR_LED: ADC:3324  V:2.766 V  Light: 81.2% (Bright)  LED:ON[0m
+[0;32mI (1835) ADC_LDR_LED: ADC:3395  V:2.807 V  Light: 82.9% (Bright)  LED:ON[0m
+[0;32mI (2335) ADC_LDR_LED: ADC:3536  V:2.884 V  Light: 86.3% (Bright)  LED:ON[0m
+[0;32mI (2835) ADC_LDR_LED: ADC:3642  V:2.936 V  Light: 88.9% (Bright)  LED:ON[0m
+[0;32mI (3335) ADC_LDR_LED: ADC:3695  V:2.962 V  Light: 90.2% (Bright)  LED:ON[0m
+[0;32mI (3835) ADC_LDR_LED: ADC:3842  V:3.030 V  Light: 93.8% (Bright)  LED:ON[0m
+[0;32mI (4335) ADC_LDR_LED: ADC:3914  V:3.062 V  Light: 95.6% (Bright)  LED:ON[0m
+[0;32mI (4835) ADC_LDR_LED: ADC:3960  V:3.082 V  Light: 96.7% (Bright)  LED:ON[0m
+[0;32mI (5335) ADC_LDR_LED: ADC:4031  V:3.112 V  Light: 98.4% (Bright)  LED:ON[0m
+[0;32mI (5835) ADC_LDR_LED: ADC:4052  V:3.121 V  Light: 98.9% (Bright)  LED:ON[0m
+[0;32mI (6335) ADC_LDR_LED: ADC:4060  V:3.124 V  Light: 99.1% (Bright)  LED:ON[0m
+[0;32mI (6835) ADC_LDR_LED: ADC:4069  V:3.128 V  Light: 99.4% (Bright)  LED:ON[0m
+[0;32mI (7335) ADC_LDR_LED: ADC:4070  V:3.129 V  Light: 99.4% (Bright)  LED:ON[0m
+[0;32mI (7835) ADC_LDR_LED: ADC:1913  V:1.693 V  Light: 46.7% (Dim)  LED:OFF[0m
+[0;32mI (8335) ADC_LDR_LED: ADC:2613  V:2.261 V  Light: 63.8% (Moderate)  LED:OFF[0m
+[0;32mI (8835) ADC_LDR_LED: ADC:1511  V:1.367 V  Light: 36.9% (Dim)  LED:OFF[0m
+[0;32mI (9335) ADC_LDR_LED: ADC:1062  V:1.003 V  Light: 25.9% (Dim)  LED:OFF[0m
+[0;32mI (9835) ADC_LDR_LED: ADC: 797  V:0.788 V  Light: 19.5% (Dark)  LED:OFF[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 24 2025 16:42:53[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa44h ( 43588) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001aa6c vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001ce6c vaddr=40080000 size=031ach ( 12716) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15838h ( 88120) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00035860 vaddr=400831ac size=09e04h ( 40452) load[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003f66c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     lab11-challenge1-LED_Control_Us[0m
+[0;32mI (193) app_init: App version:      bd82454-dirty[0m
+[0;32mI (198) app_init: Compile time:     Sep 24 2025 16:40:49[0m
+[0;32mI (203) app_init: ELF file SHA256:  14c21fcc9...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFB2CC8 len 0002D338 (180 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (256) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (287) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) ADC_LDR_LED: eFuse Two Point: NOT available[0m
+[0;32mI (305) ADC_LDR_LED: eFuse Vref: available[0m
+[0;32mI (305) ADC_LDR_LED: Calibration: eFuse Vref[0m
+[0;32mI (305) ADC_LDR_LED: LDR on GPIO35 (ADC1_CH7), LED on GPIO18 (active HIGH)[0m
+[0;32mI (315) ADC_LDR_LED: LED policy: BRIGHT -> ON  |  DARK -> OFF[0m
+[0;32mI (325) ADC_LDR_LED: Thresholds: ON > 70.0%, OFF < 60.0%[0m
+[0;32mI (325) ADC_LDR_LED: ADC: 518  V:0.562 V  Light: 12.6% (Dark)  LED:OFF[0m
+[0;32mI (835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (1335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (1835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (2335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (2835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (3335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (3835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (4335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (4835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (5335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (5835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (6335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (6835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (7335) ADC_LDR_LED: ADC:  37  V:0.172 V  Light:  0.9% (Dark)  LED:OFF[0m
+[0;32mI (7835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (8335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (8835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (9335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (9835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (10335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (10835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (11335) ADC_LDR_LED: ADC:  12  V:0.152 V  Light:  0.3% (Dark)  LED:OFF[0m
+[0;32mI (11835) ADC_LDR_LED: ADC:  12  V:0.152 V  Light:  0.3% (Dark)  LED:OFF[0m
+[0;32mI (12335) ADC_LDR_LED: ADC:   1  V:0.143 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (12835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (13335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (13835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (14335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (14835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (15335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (15835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (16335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (16835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (17335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (17835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (18335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (18835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (19335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (19835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (20335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (20835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (21335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (21835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (22335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (22835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (23335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (23835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (24335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (24835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (25335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (25835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (26335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (26835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (27335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (27835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (28335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (28835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (29335) ADC_LDR_LED: ADC:   4  V:0.145 V  Light:  0.1% (Dark)  LED:OFF[0m
+[0;32mI (29835) ADC_LDR_LED: ADC:  32  V:0.168 V  Light:  0.8% (Dark)  LED:OFF[0m
+[0;32mI (30335) ADC_LDR_LED: ADC:  83  V:0.209 V  Light:  2.0% (Dark)  LED:OFF[0m
+[0;32mI (30835) ADC_LDR_LED: ADC: 139  V:0.255 V  Light:  3.4% (Dark)  LED:OFF[0m
+[0;32mI (31335) ADC_LDR_LED: ADC: 234  V:0.332 V  Light:  5.7% (Dark)  LED:OFF[0m
+[0;32mI (31835) ADC_LDR_LED: ADC: 369  V:0.441 V  Light:  9.0% (Dark)  LED:OFF[0m
+[0;32mI (32335) ADC_LDR_LED: ADC: 477  V:0.529 V  Light: 11.6% (Dark)  LED:OFF[0m
+[0;32mI (32835) ADC_LDR_LED: ADC: 573  V:0.607 V  Light: 14.0% (Dark)  LED:OFF[0m
+[0;32mI (33335) ADC_LDR_LED: ADC: 896  V:0.868 V  Light: 21.9% (Dim)  LED:OFF[0m
+[0;32mI (33835) ADC_LDR_LED: ADC:1164  V:1.086 V  Light: 28.4% (Dim)  LED:OFF[0m
+[0;32mI (34335) ADC_LDR_LED: ADC:1475  V:1.338 V  Light: 36.0% (Dim)  LED:OFF[0m
+[0;32mI (34835) ADC_LDR_LED: ADC:1825  V:1.622 V  Light: 44.6% (Dim)  LED:OFF[0m
+[0;32mI (35335) ADC_LDR_LED: ADC:2136  V:1.874 V  Light: 52.2% (Moderate)  LED:OFF[0m
+[0;32mI (35835) ADC_LDR_LED: ADC:2471  V:2.145 V  Light: 60.3% (Moderate)  LED:OFF[0m
+[0;32mI (36335) ADC_LDR_LED: ADC:2818  V:2.427 V  Light: 68.8% (Moderate)  LED:OFF[0m
+[0;32mI (36835) ADC_LDR_LED: ADC:3159  V:2.663 V  Light: 77.1% (Moderate)  LED:ON[0m
+[0;32mI (37335) ADC_LDR_LED: ADC:3464  V:2.845 V  Light: 84.6% (Bright)  LED:ON[0m
+[0;32mI (37835) ADC_LDR_LED: ADC:3738  V:2.982 V  Light: 91.3% (Bright)  LED:ON[0m
+[0;32mI (38335) ADC_LDR_LED: ADC:3950  V:3.078 V  Light: 96.5% (Bright)  LED:ON[0m
+[0;32mI (38835) ADC_LDR_LED: ADC:4080  V:3.133 V  Light: 99.6% (Bright)  LED:ON[0m
+[0;32mI (39335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (39835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (40335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (40835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (41335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (41835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (42335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (42835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (43335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (43835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (44335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (44835) ADC_LDR_LED: ADC:4088  V:3.136 V  Light: 99.8% (Bright)  LED:ON[0m
+[0;32mI (45335) ADC_LDR_LED: ADC:3991  V:3.095 V  Light: 97.5% (Bright)  LED:ON[0m
+[0;32mI (45835) ADC_LDR_LED: ADC:3804  V:3.013 V  Light: 92.9% (Bright)  LED:ON[0m
+[0;32mI (46335) ADC_LDR_LED: ADC:3491  V:2.860 V  Light: 85.3% (Bright)  LED:ON[0m
+[0;32mI (46835) ADC_LDR_LED: ADC:3113  V:2.632 V  Light: 76.0% (Moderate)  LED:ON[0m
+[0;32mI (47335) ADC_LDR_LED: ADC:2559  V:2.217 V  Light: 62.5% (Moderate)  LED:ON[0m
+[0;32mI (47835) ADC_LDR_LED: ADC:2052  V:1.806 V  Light: 50.1% (Moderate)  LED:OFF[0m
+[0;32mI (48335) ADC_LDR_LED: ADC:1564  V:1.410 V  Light: 38.2% (Dim)  LED:OFF[0m
+[0;32mI (48835) ADC_LDR_LED: ADC:1154  V:1.078 V  Light: 28.2% (Dim)  LED:OFF[0m
+[0;32mI (49335) ADC_LDR_LED: ADC: 871  V:0.848 V  Light: 21.3% (Dim)  LED:OFF[0m
+[0;32mI (49835) ADC_LDR_LED: ADC: 604  V:0.632 V  Light: 14.7% (Dark)  LED:OFF[0m
+[0;32mI (50335) ADC_LDR_LED: ADC: 387  V:0.456 V  Light:  9.5% (Dark)  LED:OFF[0m
+[0;32mI (50835) ADC_LDR_LED: ADC: 174  V:0.283 V  Light:  4.2% (Dark)  LED:OFF[0m
+[0;32mI (51335) ADC_LDR_LED: ADC:  43  V:0.177 V  Light:  1.1% (Dark)  LED:OFF[0m
+[0;32mI (51835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (52335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (52835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (53335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (53835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (54335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (54835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (55335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (55835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (56335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (56835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (57335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (57835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (58335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (58835) ADC_LDR_LED: ADC:  22  V:0.160 V  Light:  0.5% (Dark)  LED:OFF[0m
+[0;32mI (59335) ADC_LDR_LED: ADC:  83  V:0.209 V  Light:  2.0% (Dark)  LED:OFF[0m
+[0;32mI (59835) ADC_LDR_LED: ADC: 290  V:0.377 V  Light:  7.1% (Dark)  LED:OFF[0m
+[0;32mI (60335) ADC_LDR_LED: ADC: 468  V:0.521 V  Light: 11.4% (Dark)  LED:OFF[0m
+[0;32mI (60835) ADC_LDR_LED: ADC: 768  V:0.765 V  Light: 18.8% (Dark)  LED:OFF[0m
+[0;32mI (61335) ADC_LDR_LED: ADC:1108  V:1.040 V  Light: 27.1% (Dim)  LED:OFF[0m
+[0;32mI (61835) ADC_LDR_LED: ADC:1537  V:1.388 V  Light: 37.5% (Dim)  LED:OFF[0m
+[0;32mI (62335) ADC_LDR_LED: ADC:2138  V:1.875 V  Light: 52.2% (Moderate)  LED:OFF[0m
+[0;32mI (62835) ADC_LDR_LED: ADC:2670  V:2.307 V  Light: 65.2% (Moderate)  LED:OFF[0m
+[0;32mI (63335) ADC_LDR_LED: ADC:3109  V:2.630 V  Light: 75.9% (Moderate)  LED:ON[0m
+[0;32mI (63835) ADC_LDR_LED: ADC:3152  V:2.658 V  Light: 77.0% (Moderate)  LED:ON[0m
+[0;32mI (64335) ADC_LDR_LED: ADC:3748  V:2.987 V  Light: 91.5% (Bright)  LED:ON[0m
+[0;32mI (64835) ADC_LDR_LED: ADC:3546  V:2.889 V  Light: 86.6% (Bright)  LED:ON[0m
+[0;32mI (65335) ADC_LDR_LED: ADC:3943  V:3.075 V  Light: 96.3% (Bright)  LED:ON[0m
+[0;32mI (65835) ADC_LDR_LED: ADC:4074  V:3.130 V  Light: 99.5% (Bright)  LED:ON[0m
+[0;32mI (66335) ADC_LDR_LED: ADC:4057  V:3.123 V  Light: 99.1% (Bright)  LED:ON[0m
+[0;32mI (66835) ADC_LDR_LED: ADC: 158  V:0.270 V  Light:  3.9% (Dark)  LED:OFF[0m
+[0;32mI (67335) ADC_LDR_LED: ADC: 400  V:0.466 V  Light:  9.8% (Dark)  LED:OFF[0m
+[0;32mI (67835) ADC_LDR_LED: ADC: 418  V:0.481 V  Light: 10.2% (Dark)  LED:OFF[0m
+[0;32mI (68335) ADC_LDR_LED: ADC:4049  V:3.120 V  Light: 98.9% (Bright)  LED:ON[0m
+[0;32mI (68835) ADC_LDR_LED: ADC:4093  V:3.138 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (69335) ADC_LDR_LED: ADC:4075  V:3.131 V  Light: 99.5% (Bright)  LED:ON[0m
+[0;32mI (69835) ADC_LDR_LED: ADC:3998  V:3.098 V  Light: 97.6% (Bright)  LED:ON[0m
+[0;32mI (70335) ADC_LDR_LED: ADC:3845  V:3.032 V  Light: 93.9% (Bright)  LED:ON[0m
+[0;32mI (70835) ADC_LDR_LED: ADC:3639  V:2.935 V  Light: 88.9% (Bright)  LED:ON[0m
+[0;32mI (71335) ADC_LDR_LED: ADC:3325  V:2.767 V  Light: 81.2% (Bright)  LED:ON[0m
+[0;32mI (71835) ADC_LDR_LED: ADC:3000  V:2.556 V  Light: 73.3% (Moderate)  LED:ON[0m
+[0;32mI (72335) ADC_LDR_LED: ADC:2553  V:2.212 V  Light: 62.3% (Moderate)  LED:ON[0m
+[0;32mI (72835) ADC_LDR_LED: ADC:3925  V:3.067 V  Light: 95.8% (Bright)  LED:ON[0m
+[0;32mI (73335) ADC_LDR_LED: ADC:3977  V:3.089 V  Light: 97.1% (Bright)  LED:ON[0m
+[0;32mI (73835) ADC_LDR_LED: ADC:1154  V:1.078 V  Light: 28.2% (Dim)  LED:OFF[0m
+[0;32mI (74335) ADC_LDR_LED: ADC: 890  V:0.864 V  Light: 21.7% (Dim)  LED:OFF[0m
+[0;32mI (74835) ADC_LDR_LED: ADC: 659  V:0.676 V  Light: 16.1% (Dark)  LED:OFF[0m
+[0;32mI (75335) ADC_LDR_LED: ADC: 437  V:0.496 V  Light: 10.7% (Dark)  LED:OFF[0m
+[0;32mI (75835) ADC_LDR_LED: ADC: 248  V:0.343 V  Light:  6.1% (Dark)  LED:OFF[0m
+[0;32mI (76335) ADC_LDR_LED: ADC: 118  V:0.238 V  Light:  2.9% (Dark)  LED:OFF[0m
+[0;32mI (76835) ADC_LDR_LED: ADC:  60  V:0.191 V  Light:  1.5% (Dark)  LED:OFF[0m
+[0;32mI (77335) ADC_LDR_LED: ADC:   1  V:0.143 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (77835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (78335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (78835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (79335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (79835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (80335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (80835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (81335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (81835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (82335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (82835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (83335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (83835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (84335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (84835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (85335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (85835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (86335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (86835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (87335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (87835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (88335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (88835) ADC_LDR_LED: ADC:   4  V:0.145 V  Light:  0.1% (Dark)  LED:OFF[0m
+[0;32mI (89335) ADC_LDR_LED: ADC:  13  V:0.153 V  Light:  0.3% (Dark)  LED:OFF[0m
+[0;32mI (89835) ADC_LDR_LED: ADC:  19  V:0.157 V  Light:  0.5% (Dark)  LED:OFF[0m
+[0;32mI (90335) ADC_LDR_LED: ADC:  23  V:0.161 V  Light:  0.6% (Dark)  LED:OFF[0m
+[0;32mI (90835) ADC_LDR_LED: ADC:  40  V:0.174 V  Light:  1.0% (Dark)  LED:OFF[0m
+[0;32mI (91335) ADC_LDR_LED: ADC:  46  V:0.179 V  Light:  1.1% (Dark)  LED:OFF[0m
+[0;32mI (91835) ADC_LDR_LED: ADC:  45  V:0.178 V  Light:  1.1% (Dark)  LED:OFF[0m
+[0;32mI (92335) ADC_LDR_LED: ADC:  54  V:0.186 V  Light:  1.3% (Dark)  LED:OFF[0m
+[0;32mI (92835) ADC_LDR_LED: ADC:  63  V:0.193 V  Light:  1.5% (Dark)  LED:OFF[0m
+[0;32mI (93335) ADC_LDR_LED: ADC:  57  V:0.188 V  Light:  1.4% (Dark)  LED:OFF[0m
+[0;32mI (93835) ADC_LDR_LED: ADC:  60  V:0.191 V  Light:  1.5% (Dark)  LED:OFF[0m
+[0;32mI (94335) ADC_LDR_LED: ADC:  61  V:0.191 V  Light:  1.5% (Dark)  LED:OFF[0m
+[0;32mI (94835) ADC_LDR_LED: ADC:  52  V:0.184 V  Light:  1.3% (Dark)  LED:OFF[0m
+[0;32mI (95335) ADC_LDR_LED: ADC:  52  V:0.184 V  Light:  1.3% (Dark)  LED:OFF[0m
+[0;32mI (95835) ADC_LDR_LED: ADC:  44  V:0.178 V  Light:  1.1% (Dark)  LED:OFF[0m
+[0;32mI (96335) ADC_LDR_LED: ADC:  37  V:0.172 V  Light:  0.9% (Dark)  LED:OFF[0m
+[0;32mI (96835) ADC_LDR_LED: ADC:  35  V:0.170 V  Light:  0.9% (Dark)  LED:OFF[0m
+[0;32mI (97335) ADC_LDR_LED: ADC:  25  V:0.162 V  Light:  0.6% (Dark)  LED:OFF[0m
+[0;32mI (97835) ADC_LDR_LED: ADC:  25  V:0.162 V  Light:  0.6% (Dark)  LED:OFF[0m
+[0;32mI (98335) ADC_LDR_LED: ADC:  16  V:0.155 V  Light:  0.4% (Dark)  LED:OFF[0m
+[0;32mI (98835) ADC_LDR_LED: ADC:  15  V:0.154 V  Light:  0.4% (Dark)  LED:OFF[0m
+[0;32mI (99335) ADC_LDR_LED: ADC:   9  V:0.149 V  Light:  0.2% (Dark)  LED:OFF[0m
+[0;32mI (99835) ADC_LDR_LED: ADC:   7  V:0.148 V  Light:  0.2% (Dark)  LED:OFF[0m
+[0;32mI (100335) ADC_LDR_LED: ADC:   5  V:0.146 V  Light:  0.1% (Dark)  LED:OFF[0m
+[0;32mI (100835) ADC_LDR_LED: ADC:   1  V:0.143 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (101335) ADC_LDR_LED: ADC:   1  V:0.143 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (101835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (102335) ADC_LDR_LED: ADC:   1  V:0.143 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (102835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (103335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (103835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (104335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (104835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (105335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (105835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (106335) ADC_LDR_LED: ADC:   2  V:0.144 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (106835) ADC_LDR_LED: ADC:   3  V:0.144 V  Light:  0.1% (Dark)  LED:OFF[0m
+[0;32mI (107335) ADC_LDR_LED: ADC:   5  V:0.146 V  Light:  0.1% (Dark)  LED:OFF[0m
+[0;32mI (107835) ADC_LDR_LED: ADC:   9  V:0.149 V  Light:  0.2% (Dark)  LED:OFF[0m
+[0;32mI (108335) ADC_LDR_LED: ADC:  14  V:0.153 V  Light:  0.3% (Dark)  LED:OFF[0m
+[0;32mI (108835) ADC_LDR_LED: ADC:  22  V:0.160 V  Light:  0.5% (Dark)  LED:OFF[0m
+[0;32mI (109335) ADC_LDR_LED: ADC:  24  V:0.161 V  Light:  0.6% (Dark)  LED:OFF[0m
+[0;32mI (109835) ADC_LDR_LED: ADC:  30  V:0.166 V  Light:  0.7% (Dark)  LED:OFF[0m
+[0;32mI (110335) ADC_LDR_LED: ADC:  42  V:0.176 V  Light:  1.0% (Dark)  LED:OFF[0m
+[0;32mI (110835) ADC_LDR_LED: ADC:  58  V:0.189 V  Light:  1.4% (Dark)  LED:OFF[0m
+[0;32mI (111335) ADC_LDR_LED: ADC:  75  V:0.203 V  Light:  1.8% (Dark)  LED:OFF[0m
+[0;32mI (111835) ADC_LDR_LED: ADC: 113  V:0.234 V  Light:  2.8% (Dark)  LED:OFF[0m
+[0;32mI (112335) ADC_LDR_LED: ADC: 151  V:0.264 V  Light:  3.7% (Dark)  LED:OFF[0m
+[0;32mI (112835) ADC_LDR_LED: ADC: 215  V:0.316 V  Light:  5.3% (Dark)  LED:OFF[0m
+[0;32mI (113335) ADC_LDR_LED: ADC: 262  V:0.354 V  Light:  6.4% (Dark)  LED:OFF[0m
+[0;32mI (113835) ADC_LDR_LED: ADC: 322  V:0.403 V  Light:  7.9% (Dark)  LED:OFF[0m
+[0;32mI (114335) ADC_LDR_LED: ADC: 384  V:0.453 V  Light:  9.4% (Dark)  LED:OFF[0m
+[0;32mI (114835) ADC_LDR_LED: ADC: 467  V:0.521 V  Light: 11.4% (Dark)  LED:OFF[0m
+[0;32mI (115335) ADC_LDR_LED: ADC: 542  V:0.581 V  Light: 13.2% (Dark)  LED:OFF[0m
+[0;32mI (115835) ADC_LDR_LED: ADC: 633  V:0.655 V  Light: 15.5% (Dark)  LED:OFF[0m
+[0;32mI (116335) ADC_LDR_LED: ADC: 724  V:0.729 V  Light: 17.7% (Dark)  LED:OFF[0m
+[0;32mI (116835) ADC_LDR_LED: ADC: 846  V:0.828 V  Light: 20.7% (Dim)  LED:OFF[0m
+[0;32mI (117335) ADC_LDR_LED: ADC: 989  V:0.944 V  Light: 24.2% (Dim)  LED:OFF[0m
+[0;32mI (117835) ADC_LDR_LED: ADC:1143  V:1.069 V  Light: 27.9% (Dim)  LED:OFF[0m
+[0;32mI (118335) ADC_LDR_LED: ADC:1295  V:1.192 V  Light: 31.6% (Dim)  LED:OFF[0m
+[0;32mI (118835) ADC_LDR_LED: ADC:1480  V:1.342 V  Light: 36.1% (Dim)  LED:OFF[0m
+[0;32mI (119335) ADC_LDR_LED: ADC:1696  V:1.517 V  Light: 41.4% (Dim)  LED:OFF[0m
+[0;32mI (119835) ADC_LDR_LED: ADC:1930  V:1.707 V  Light: 47.1% (Dim)  LED:OFF[0m
+[0;32mI (120335) ADC_LDR_LED: ADC:2176  V:1.906 V  Light: 53.1% (Moderate)  LED:OFF[0m
+[0;32mI (120835) ADC_LDR_LED: ADC:2395  V:2.084 V  Light: 58.5% (Moderate)  LED:OFF[0m
+[0;32mI (121335) ADC_LDR_LED: ADC:2611  V:2.259 V  Light: 63.8% (Moderate)  LED:OFF[0m
+[0;32mI (121835) ADC_LDR_LED: ADC:2864  V:2.464 V  Light: 69.9% (Moderate)  LED:OFF[0m
+[0;32mI (122335) ADC_LDR_LED: ADC:3099  V:2.623 V  Light: 75.7% (Moderate)  LED:ON[0m
+[0;32mI (122835) ADC_LDR_LED: ADC:3313  V:2.759 V  Light: 80.9% (Bright)  LED:ON[0m
+[0;32mI (123335) ADC_LDR_LED: ADC:3553  V:2.892 V  Light: 86.8% (Bright)  LED:ON[0m
+[0;32mI (123835) ADC_LDR_LED: ADC:3775  V:2.999 V  Light: 92.2% (Bright)  LED:ON[0m
+[0;32mI (124335) ADC_LDR_LED: ADC:3921  V:3.065 V  Light: 95.8% (Bright)  LED:ON[0m
+[0;32mI (124835) ADC_LDR_LED: ADC:4058  V:3.123 V  Light: 99.1% (Bright)  LED:ON[0m
+[0;32mI (125335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (125835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (126335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (126835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (127335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (127835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (128335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (128835) ADC_LDR_LED: ADC: 597  V:0.626 V  Light: 14.6% (Dark)  LED:OFF[0m
+[0;32mI (129335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (129835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (130335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (130835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (131335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (131835) ADC_LDR_LED: ADC:4058  V:3.123 V  Light: 99.1% (Bright)  LED:ON[0m
+[0;32mI (132335) ADC_LDR_LED: ADC:3938  V:3.073 V  Light: 96.2% (Bright)  LED:ON[0m
+[0;32mI (132835) ADC_LDR_LED: ADC:3724  V:2.976 V  Light: 90.9% (Bright)  LED:ON[0m
+[0;32mI (133335) ADC_LDR_LED: ADC:3426  V:2.824 V  Light: 83.7% (Bright)  LED:ON[0m
+[0;32mI (133835) ADC_LDR_LED: ADC:3054  V:2.593 V  Light: 74.6% (Moderate)  LED:ON[0m
+[0;32mI (134335) ADC_LDR_LED: ADC:2595  V:2.246 V  Light: 63.4% (Moderate)  LED:ON[0m
+[0;32mI (134835) ADC_LDR_LED: ADC:2108  V:1.851 V  Light: 51.5% (Moderate)  LED:OFF[0m
+[0;32mI (135335) ADC_LDR_LED: ADC:1589  V:1.430 V  Light: 38.8% (Dim)  LED:OFF[0m
+[0;32mI (135835) ADC_LDR_LED: ADC:1242  V:1.149 V  Light: 30.3% (Dim)  LED:OFF[0m
+[0;32mI (136335) ADC_LDR_LED: ADC: 952  V:0.914 V  Light: 23.2% (Dim)  LED:OFF[0m
+[0;32mI (136835) ADC_LDR_LED: ADC: 731  V:0.735 V  Light: 17.9% (Dark)  LED:OFF[0m
+[0;32mI (137335) ADC_LDR_LED: ADC: 480  V:0.531 V  Light: 11.7% (Dark)  LED:OFF[0m
+[0;32mI (137835) ADC_LDR_LED: ADC: 296  V:0.382 V  Light:  7.2% (Dark)  LED:OFF[0m
+[0;32mI (138335) ADC_LDR_LED: ADC: 135  V:0.251 V  Light:  3.3% (Dark)  LED:OFF[0m
+[0;32mI (138835) ADC_LDR_LED: ADC:  31  V:0.167 V  Light:  0.8% (Dark)  LED:OFF[0m
+[0;32mI (139335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (139835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (140335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (140835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (141335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (141835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (142335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (142835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (143335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (143835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (144335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (144835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (145335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (145835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (146335) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (146835) ADC_LDR_LED: ADC:   0  V:0.142 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (147335) ADC_LDR_LED: ADC:   1  V:0.143 V  Light:  0.0% (Dark)  LED:OFF[0m
+[0;32mI (147835) ADC_LDR_LED: ADC:  20  V:0.158 V  Light:  0.5% (Dark)  LED:OFF[0m
+[0;32mI (148335) ADC_LDR_LED: ADC:  58  V:0.189 V  Light:  1.4% (Dark)  LED:OFF[0m
+[0;32mI (148835) ADC_LDR_LED: ADC: 218  V:0.319 V  Light:  5.3% (Dark)  LED:OFF[0m
+[0;32mI (149335) ADC_LDR_LED: ADC: 360  V:0.434 V  Light:  8.8% (Dark)  LED:OFF[0m
+[0;32mI (149835) ADC_LDR_LED: ADC: 487  V:0.537 V  Light: 11.9% (Dark)  LED:OFF[0m
+[0;32mI (150335) ADC_LDR_LED: ADC: 674  V:0.688 V  Light: 16.5% (Dark)  LED:OFF[0m
+[0;32mI (150835) ADC_LDR_LED: ADC: 896  V:0.868 V  Light: 21.9% (Dim)  LED:OFF[0m
+[0;32mI (151335) ADC_LDR_LED: ADC:1147  V:1.072 V  Light: 28.0% (Dim)  LED:OFF[0m
+[0;32mI (151835) ADC_LDR_LED: ADC:1478  V:1.340 V  Light: 36.1% (Dim)  LED:OFF[0m
+[0;32mI (152335) ADC_LDR_LED: ADC:1715  V:1.532 V  Light: 41.9% (Dim)  LED:OFF[0m
+[0;32mI (152835) ADC_LDR_LED: ADC:1994  V:1.759 V  Light: 48.7% (Dim)  LED:OFF[0m
+[0;32mI (153335) ADC_LDR_LED: ADC:2218  V:1.940 V  Light: 54.2% (Moderate)  LED:OFF[0m
+����������������������������������������������������������������153835) ADC_LDR_LED: ADC:2551  V:2.210 V  Light: 62.3% (Moderate)  LED:OFF
+[0;32mI (154335) ADC_LDR_LED: ADC:2874  V:2.472 V  Light: 70.2% (Moderate)  LED:ON[0m
+[0;32mI (154835) ADC_LDR_LED: ADC:3151  V:2.657 V  Light: 76.9% (Moderate)  LED:ON[0m
+[0;32mI (155335) ADC_LDR_LED: ADC:3390  V:2.804 V  Light: 82.8% (Bright)  LED:ON[0m
+[0;32mI (155835) ADC_LDR_LED: ADC:3545  V:2.888 V  Light: 86.6% (Bright)  LED:ON[0m
+[0;32mI (156335) ADC_LDR_LED: ADC:3784  V:3.004 V  Light: 92.4% (Bright)  LED:ON[0m
+[0;32mI (156835) ADC_LDR_LED: ADC:3978  V:3.090 V  Light: 97.1% (Bright)  LED:ON[0m
+[0;32mI (157335) ADC_LDR_LED: ADC:4077  V:3.132 V  Light: 99.6% (Bright)  LED:ON[0m
+[0;32mI (157835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (158335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (158835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (159335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (159835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (160335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (160835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (161335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (161835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (162335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (162835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (163335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (163835) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+[0;32mI (164335) ADC_LDR_LED: ADC:4095  V:3.139 V  Light:100.0% (Bright)  LED:ON[0m
+����������������������������������������������������������������64835) ADC_LDR_LED: ADC:4085  V:3.135 V  Light: 99.8% (Bright)  LED:ON
+[0;32mI (165335) ADC_LDR_LED: ADC:3844  V:3.031 V  Light: 93.9% (Bright)  LED:ON[0m
+[0;32mI (165835) ADC_LDR_LED: ADC:3842  V:3.030 V  Light: 93.8% (Bright)  LED:ON[0m
+[0;32mI (166335) ADC_LDR_LED: ADC:3596  V:2.914 V  Light: 87.8% (Bright)  LED:ON[0m

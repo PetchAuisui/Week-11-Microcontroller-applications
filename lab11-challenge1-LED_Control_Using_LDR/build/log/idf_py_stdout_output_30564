@@ -1,0 +1,136 @@
+Command: C:\Users\Petch\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Petch\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Petch\OneDrive\Documents\VScode\Week-11-Microcontroller-applications\lab11-challenge1-LED_Control_Using_LDR\build\lab11-challenge1-LED_Control_Using_LDR.elf C:\Users\Petch\OneDrive\Documents\VScode\Week-11-Microcontroller-applications\lab11-challenge1-LED_Control_Using_LDR\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Petch\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Petch\esp\v5.5.1\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 24 2025 16:42:53[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ad4ch ( 44364) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001ad74 vaddr=3ffb0000 size=02450h (  9296) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001d1cc vaddr=40080000 size=02e4ch ( 11852) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15f10h ( 89872) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00035f38 vaddr=40082e4c size=0a390h ( 41872) load[0m
+[0;32mI (162) esp_image: segment 5: paddr=000402d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (169) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (169) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: Pro cpu start user code[0m
+[0;32mI (188) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (188) app_init: Application information:[0m
+[0;32mI (188) app_init: Project name:     lab11-challenge1-LED_Control_Us[0m
+[0;32mI (194) app_init: App version:      bd82454-dirty[0m
+[0;32mI (199) app_init: Compile time:     Sep 24 2025 16:40:49[0m
+[0;32mI (204) app_init: ELF file SHA256:  cb9486cbf...[0m
+[0;32mI (208) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (220) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (224) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFB2D80 len 0002D280 (180 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 4008D1DC len 00012E24 (75 KiB): IRAM[0m
+[0;33mW (258) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (288) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (296) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (306) LDR_LED_PWM: Start LDR-based LED brightness control[0m
+[0;32mI (306) LDR_LED_PWM: ADC: 339  Light:8.3%  LED duty:84/1023[0m
+[0;32mI (806) LDR_LED_PWM: ADC: 340  Light:8.3%  LED duty:84/1023[0m
+[0;32mI (1306) LDR_LED_PWM: ADC: 341  Light:8.3%  LED duty:85/1023[0m
+[0;32mI (1806) LDR_LED_PWM: ADC: 343  Light:8.4%  LED duty:85/1023[0m
+[0;32mI (2306) LDR_LED_PWM: ADC: 342  Light:8.4%  LED duty:85/1023[0m
+[0;32mI (2806) LDR_LED_PWM: ADC: 339  Light:8.3%  LED duty:84/1023[0m
+[0;32mI (3306) LDR_LED_PWM: ADC: 340  Light:8.3%  LED duty:84/1023[0m
+[0;32mI (3806) LDR_LED_PWM: ADC: 338  Light:8.3%  LED duty:84/1023[0m
+[0;32mI (4306) LDR_LED_PWM: ADC: 348  Light:8.5%  LED duty:86/1023[0m
+[0;32mI (4806) LDR_LED_PWM: ADC: 335  Light:8.2%  LED duty:83/1023[0m
+[0;32mI (5306) LDR_LED_PWM: ADC: 199  Light:4.9%  LED duty:49/1023[0m
+[0;32mI (5806) LDR_LED_PWM: ADC: 214  Light:5.2%  LED duty:53/1023[0m
+[0;32mI (6306) LDR_LED_PWM: ADC: 315  Light:7.7%  LED duty:78/1023[0m
+[0;32mI (6806) LDR_LED_PWM: ADC: 308  Light:7.5%  LED duty:76/1023[0m
+[0;32mI (7306) LDR_LED_PWM: ADC: 197  Light:4.8%  LED duty:49/1023[0m
+[0;32mI (7806) LDR_LED_PWM: ADC: 197  Light:4.8%  LED duty:49/1023[0m
+[0;32mI (8306) LDR_LED_PWM: ADC:1782  Light:43.5%  LED duty:445/1023[0m
+[0;32mI (8806) LDR_LED_PWM: ADC:2015  Light:49.2%  LED duty:503/1023[0m
+[0;32mI (9306) LDR_LED_PWM: ADC:2787  Light:68.1%  LED duty:696/1023[0m
+[0;32mI (9806) LDR_LED_PWM: ADC:3152  Light:77.0%  LED duty:787/1023[0m
+[0;32mI (10306) LDR_LED_PWM: ADC:3028  Light:73.9%  LED duty:756/1023[0m
+[0;32mI (10806) LDR_LED_PWM: ADC:2959  Light:72.3%  LED duty:739/1023[0m
+[0;32mI (11306) LDR_LED_PWM: ADC:3055  Light:74.6%  LED duty:763/1023[0m
+[0;32mI (11806) LDR_LED_PWM: ADC:3092  Light:75.5%  LED duty:772/1023[0m
+[0;32mI (12306) LDR_LED_PWM: ADC:3120  Light:76.2%  LED duty:779/1023[0m
+[0;32mI (12806) LDR_LED_PWM: ADC:2792  Light:68.2%  LED duty:697/1023[0m
+[0;32mI (13306) LDR_LED_PWM: ADC: 464  Light:11.3%  LED duty:115/1023[0m
+[0;32mI (13806) LDR_LED_PWM: ADC: 229  Light:5.6%  LED duty:57/1023[0m
+[0;32mI (14306) LDR_LED_PWM: ADC: 220  Light:5.4%  LED duty:54/1023[0m
+[0;32mI (14806) LDR_LED_PWM: ADC: 216  Light:5.3%  LED duty:53/1023[0m
+[0;32mI (15306) LDR_LED_PWM: ADC: 379  Light:9.3%  LED duty:94/1023[0m
+[0;32mI (15806) LDR_LED_PWM: ADC:2954  Light:72.1%  LED duty:737/1023[0m
+[0;32mI (16306) LDR_LED_PWM: ADC:2930  Light:71.6%  LED duty:731/1023[0m
+[0;32mI (16806) LDR_LED_PWM: ADC:2932  Light:71.6%  LED duty:732/1023[0m
+[0;32mI (17306) LDR_LED_PWM: ADC:2902  Light:70.9%  LED duty:724/1023[0m
+[0;32mI (17806) LDR_LED_PWM: ADC:2339  Light:57.1%  LED duty:584/1023[0m
+[0;32mI (18306) LDR_LED_PWM: ADC: 508  Light:12.4%  LED duty:126/1023[0m
+[0;32mI (18806) LDR_LED_PWM: ADC: 231  Light:5.6%  LED duty:57/1023[0m
+[0;32mI (19306) LDR_LED_PWM: ADC: 227  Light:5.5%  LED duty:56/1023[0m
+[0;32mI (19806) LDR_LED_PWM: ADC: 239  Light:5.8%  LED duty:59/1023[0m
+[0;32mI (20306) LDR_LED_PWM: ADC:3205  Light:78.3%  LED duty:800/1023[0m
+[0;32mI (20806) LDR_LED_PWM: ADC:3649  Light:89.1%  LED duty:911/1023[0m
+[0;32mI (21306) LDR_LED_PWM: ADC:3698  Light:90.3%  LED duty:923/1023[0m
+[0;32mI (21806) LDR_LED_PWM: ADC:2742  Light:67.0%  LED duty:684/1023[0m
+[0;32mI (22306) LDR_LED_PWM: ADC: 290  Light:7.1%  LED duty:72/1023[0m
+[0;32mI (22806) LDR_LED_PWM: ADC: 239  Light:5.8%  LED duty:59/1023[0m
+[0;32mI (23306) LDR_LED_PWM: ADC: 251  Light:6.1%  LED duty:62/1023[0m
+[0;32mI (23806) LDR_LED_PWM: ADC: 208  Light:5.1%  LED duty:51/1023[0m
+[0;32mI (24306) LDR_LED_PWM: ADC: 204  Light:5.0%  LED duty:50/1023[0m
+[0;32mI (24806) LDR_LED_PWM: ADC: 207  Light:5.1%  LED duty:51/1023[0m
+[0;32mI (25306) LDR_LED_PWM: ADC: 206  Light:5.0%  LED duty:51/1023[0m
+[0;32mI (25806) LDR_LED_PWM: ADC: 206  Light:5.0%  LED duty:51/1023[0m
+[0;32mI (26306) LDR_LED_PWM: ADC: 143  Light:3.5%  LED duty:35/1023[0m
+[0;32mI (26806) LDR_LED_PWM: ADC:  26  Light:0.6%  LED duty:6/1023[0m
+[0;32mI (27306) LDR_LED_PWM: ADC:   0  Light:0.0%  LED duty:0/1023[0m
+[0;32mI (27806) LDR_LED_PWM: ADC:   0  Light:0.0%  LED duty:0/1023[0m
+[0;32mI (28306) LDR_LED_PWM: ADC:   0  Light:0.0%  LED duty:0/1023[0m
+[0;32mI (28806) LDR_LED_PWM: ADC:   0  Light:0.0%  LED duty:0/1023[0m
+[0;32mI (29306) LDR_LED_PWM: ADC: 177  Light:4.3%  LED duty:44/1023[0m
+[0;32mI (29806) LDR_LED_PWM: ADC: 308  Light:7.5%  LED duty:76/1023[0m
+[0;32mI (30306) LDR_LED_PWM: ADC: 309  Light:7.5%  LED duty:77/1023[0m
+[0;32mI (30806) LDR_LED_PWM: ADC: 307  Light:7.5%  LED duty:76/1023[0m
+[0;32mI (31306) LDR_LED_PWM: ADC: 126  Light:3.1%  LED duty:31/1023[0m
+[0;32mI (31806) LDR_LED_PWM: ADC:   0  Light:0.0%  LED duty:0/1023[0m
+[0;32mI (32306) LDR_LED_PWM: ADC:   0  Light:0.0%  LED duty:0/1023[0m
+[0;32mI (32806) LDR_LED_PWM: ADC: 336  Light:8.2%  LED duty:83/1023[0m
+[0;32mI (33306) LDR_LED_PWM: ADC: 344  Light:8.4%  LED duty:85/1023[0m
+[0;32mI (33806) LDR_LED_PWM: ADC: 345  Light:8.4%  LED duty:86/1023[0m
+[0;32mI (34306) LDR_LED_PWM: ADC: 344  Light:8.4%  LED duty:85/1023[0m
+[0;32mI (34806) LDR_LED_PWM: ADC: 345  Light:8.4%  LED duty:86/1023[0m
+[0;32mI (35306) LDR_LED_PWM: ADC: 346  Light:8.4%  LED duty:86/1023[0m
+[0;32mI (35806) LDR_LED_PWM: ADC: 347  Light:8.5%  LED duty:86/1023[0m
+[0;32mI (36306) LDR_LED_PWM: ADC: 345  Light:8.4%  LED duty:86/1023[0m
+[0;32mI (36806) LDR_LED_PWM: ADC: 345  Light:8.4%  LED duty:86/1023[0m
+[0;32mI (37306) LDR_LED_PWM: ADC: 346  Light:8.4%  LED duty:86/1023[0m
+[0;32mI (37806) LDR_LED_PWM: ADC: 347  Light:8.5%  LED duty:86/1023[0m
