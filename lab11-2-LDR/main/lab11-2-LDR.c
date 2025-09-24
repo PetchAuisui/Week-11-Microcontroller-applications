@@ -1,3 +1,9 @@
+// การทดลองที่ 2: เซนเซอร์แสง LDR
+// Light Sensor with ESP32 ADC using ESP-IDF
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/adc.h"

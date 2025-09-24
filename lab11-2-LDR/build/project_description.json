@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "lab11-2-LDR",
-    "project_version":    "2b79e7d-dirty",
+    "project_version":    "4afcfdf-dirty",
     "project_path":       "C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-2-LDR",
     "idf_path":           "C:/Users/Petch/esp/v5.5.1/esp-idf",
     "build_dir":          "C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-2-LDR/build",
