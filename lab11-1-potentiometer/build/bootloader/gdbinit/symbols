@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/build/bootloader/bootloader.elf
+file C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/build/bootloader/bootloader.elf

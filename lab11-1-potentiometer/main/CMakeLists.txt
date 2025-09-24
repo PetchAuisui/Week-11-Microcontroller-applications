@@ -1,2 +1,2 @@
-idf_component_register(SRCS "ESp32-ADC.c"
+idf_component_register(SRCS "lab11-1-potentiometer.c"
                     INCLUDE_DIRS ".")

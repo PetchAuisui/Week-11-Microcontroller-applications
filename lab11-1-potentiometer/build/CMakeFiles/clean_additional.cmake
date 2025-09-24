@@ -3,8 +3,6 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
-  "ESp32-ADC.bin"
-  "ESp32-ADC.map"
   "bootloader\\bootloader.bin"
   "bootloader\\bootloader.elf"
   "bootloader\\bootloader.map"
@@ -16,6 +14,8 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "flash_bootloader_args"
   "flash_project_args"
   "flasher_args.json"
+  "lab11-1-potentiometer.bin"
+  "lab11-1-potentiometer.map"
   "ldgen_libraries"
   "ldgen_libraries.in"
   "project_elf_src_esp32.c"

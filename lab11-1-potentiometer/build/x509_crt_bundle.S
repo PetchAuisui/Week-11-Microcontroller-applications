@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

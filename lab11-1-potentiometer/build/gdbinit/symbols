@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/build/bootloader/bootloader.elf
+    add-symbol-file C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/build/ESp32-ADC.elf
+file C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/build/lab11-1-potentiometer.elf

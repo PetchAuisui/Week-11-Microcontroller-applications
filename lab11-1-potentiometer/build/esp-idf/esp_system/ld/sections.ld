@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Users\Petch\OneDrive\Documents\VScode\Week-11-Microcontroller-applications\ESp32-ADC\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: C:\Users\Petch\OneDrive\Documents\VScode\Week-11-Microcontroller-applications\lab11-1-potentiometer\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

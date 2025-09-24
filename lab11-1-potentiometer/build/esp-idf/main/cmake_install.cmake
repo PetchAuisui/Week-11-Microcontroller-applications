@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/main
+# Install script for directory: C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ESp32-ADC")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/lab11-1-potentiometer")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

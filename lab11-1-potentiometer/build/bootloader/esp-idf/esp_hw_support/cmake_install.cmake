@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/build/bootloader/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
+  include("C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/build/bootloader/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/ESp32-ADC/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("C:/Users/Petch/OneDrive/Documents/VScode/Week-11-Microcontroller-applications/lab11-1-potentiometer/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 
